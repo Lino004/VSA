@@ -1,0 +1,33 @@
+$color-grid-1: #2C3E50;
+$color-grid-2: #4F5760;
+$color-grid-3: #E1E5EC;
+$color-grid-4: #343434;
+$color-background: #F2F4FA;
+
+$primary: #009FF9;
+$success: #49DB70;
+$warning: #F89E37;
+$danger: #FF7291;
+$default: $color-grid-2;
+$msg-danger: #FFEAEB;
+$aquamarine: #1CE1AC;
+
+$color-shadow: #00000029;
+$navbar-box-shadow-color: $color-shadow;
+
+$transparent: transparent;
+
+$addColors: (
+  'color-background': ($color-background, $white),
+  'grid-1': ($color-grid-1, $white),
+  'grid-2': ($color-grid-2, $white),
+  'grid-3': ($color-grid-3, $white),
+  'grid-4': ($color-grid-4, $white),
+  "primary": ($primary, $white),
+  "success": ($success, $white),
+  "warning": ($warning, $white),
+  "danger": ($danger, $white),
+  "default": ($default, $white),
+  "aquamarine": ($aquamarine, $white),
+  "transparent": ($transparent, $black),
+);

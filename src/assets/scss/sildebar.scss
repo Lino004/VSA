@@ -1,0 +1,119 @@
+$sidebar-width: 320px;
+
+.b-sidebar .sidebar-content{
+  box-shadow: none;
+  width: 320px;
+  clip-path: ellipse(100% 100% at 0% 55%);
+  background: linear-gradient(180deg, rgb(73, 133, 254) 0%, rgba(84,157,253,1) 50%, rgba(50,39,226,1) 100%);
+}
+
+.p-1 {
+  padding: 1em;
+}
+
+.div-menu{
+  display: grid;
+  align-content: space-between;
+}
+
+.media{
+  align-items: center;
+}
+
+.menu-sildebar{
+  max-height: 650px;
+  overflow-y: auto;
+  .menu-item-sildebar a {
+    color: white;
+    font-size: 20px;
+    .icon{
+      margin-right: 10px;
+      font-size: 25px;
+    }
+  }
+  .menu-item-sildebar a:hover{
+    background-color: rgba(242, 242, 242, 0.35);
+  }
+}
+.menu-sildebar::-webkit-scrollbar{
+  display: none;
+}
+
+
+.sidebar-page {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+  position: relative;
+  color: white !important;
+  .sidebar-layout {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .b-sidebar {
+    // display: none !important;
+    .sidebar-content {
+      &.is-mini-mobile {
+        &:not(.is-mini-expand),
+        &.is-mini-expand:not(:hover) {
+          .menu-list {
+            li {
+              a {
+                span:nth-child(2) {
+                  display: none;
+                }
+              }
+              ul {
+                padding-left: 0;
+                li {
+                  a {
+                    display: inline-block;
+                  }
+                }
+              }
+            }
+          }
+          .menu-label:not(:last-child) {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width: 1024px) {
+  .b-sidebar {
+    .sidebar-content {
+      &.is-mini {
+        &:not(.is-mini-expand),
+        &.is-mini-expand:not(:hover) {
+          .menu-list {
+            li {
+              a {
+                span:nth-child(2) {
+                  display: none;
+                }
+              }
+              ul {
+                padding-left: 0;
+                li {
+                  a {
+                    display: inline-block;
+                  }
+                }
+              }
+            }
+          }
+          .menu-label:not(:last-child) {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}

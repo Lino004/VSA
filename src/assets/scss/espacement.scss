@@ -1,0 +1,269 @@
+
+/************* margin class **************/
+// margin top
+.mt-5 {
+  margin-top: 5px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px !important;
+}
+.mt-30 {
+  margin-top: 30px !important;
+}
+.mt-40 {
+  margin-top: 40px !important;
+}
+.mt-120 {
+  margin-top: 120px;
+}
+.mt-130 {
+  margin-top: 130px;
+}
+
+// margin right
+.mr-0 {
+  margin-right: 0px !important;
+}
+.mr-10 {
+  margin-right: 10px !important;
+}
+.mr-20 {
+  margin-right: 20px !important;
+}
+.mr-50 {
+  margin-right: 50px !important;
+}
+
+// margin bottoom
+
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+.mb-4 {
+  margin-bottom: 4px !important;
+}
+.mb-10 {
+  margin-bottom: 10px !important;
+}
+.mb-13 {
+  margin-bottom: 13px !important;
+}
+.mb-15 {
+  margin-bottom: 15px !important;
+}
+.mb-20 {
+  margin-bottom: 20px !important;
+}
+.mb-30 {
+  margin-bottom: 30px !important;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}
+
+// margin left
+.ml-0 {
+  margin-left: 0px !important;
+}
+.ml-10 {
+  margin-left: 10px;
+}
+.ml-15 {
+  margin-left: 15px;
+}
+.ml-20 {
+  margin-left: 20px !important;
+}
+.ml-30 {
+  margin-left: 30px;
+}
+.ml-40 {
+  margin-left: 40px;
+}
+
+// margin left and right
+
+.mx-20 {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.mx-25 {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+.mx-82 {
+  margin-left: 82px;
+  margin-right: 82px;
+}
+
+// margin top and bottom
+.my-20 {
+  margin-top: 20px !important;
+  margin-bottom: 20px !important;
+}
+.my-30 {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+}
+
+// margin auto
+.ma-10 {
+  margin: 10px;
+}
+.ma-30 {
+  margin: 30px;
+}
+.ma-40 {
+  margin: 40px !important;
+}
+
+/************* padding class **************/
+// padding top
+.pt-0 {
+  padding-top: 0px !important;
+}
+.pt-20 {
+  padding-top: 20px;
+}
+.pt-10 {
+  padding-top: 10px;
+}
+.pt-40 {
+  padding-top: 40px;
+}
+
+// padding right
+.pr-0 {
+  padding-right: 0px !important;
+}
+.pr-5 {
+  padding-right: 5px !important;
+}
+.pr-10 {
+  padding-right: 10px !important;
+}
+.pr-20 {
+  padding-right: 20px !important;
+}
+.pr-30 {
+  padding-right: 30px !important;
+}
+.pr-50 {
+  padding-right: 50px !important;
+}
+// padding left
+
+.pl-0 {
+  padding-left: 0 !important;
+}
+
+.pl-10 {
+  padding-left: 10px !important;
+}
+.pl-20 {
+  padding-left: 20px !important;
+}
+.pl-30 {
+  padding-left: 30px !important;
+}
+
+// padding bottom
+.pb-0 {
+  padding-bottom: 0px !important;
+}
+.pb-10 {
+  padding-bottom: 10px !important;
+}
+.pb-20 {
+  padding-bottom: 20px !important;
+}
+.pb-30 {
+  padding-bottom: 30px !important;
+}
+.pb-40 {
+  padding-bottom: 40px !important;
+}
+.pb-60 {
+  padding-bottom: 60px !important;
+}
+
+// padding left and right
+
+.px-0 {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+.px-10 {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+.px-20 {
+  padding-left: 20px !important;
+  padding-right: 20px !important;
+}
+
+// padding top and bottom
+
+.py-0 {
+  padding-top: 0px !important;
+  padding-bottom: 0px !important;
+}
+.py-20 {
+  padding-top: 20px !important;
+  padding-bottom: 20px !important;
+}
+.py-30 {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+.py-auto {
+  padding-top: auto !important;
+  padding-bottom: auto !important;
+}
+
+// padding auto
+.pa-10 {
+  padding: 10px !important;
+}
+.pa-20 {
+  padding: 20px !important;
+}
+.pa-30 {
+  padding: 30px !important;
+}
+.pa-40 {
+  padding: 40px !important;
+}
+.pltb-0 {
+  padding-left: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.pltb-10 {
+  padding-left: 10px !important;
+  padding-top: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.ptbr-0 {
+  padding-right: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+.ptrb-10 {
+  padding-top: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+}
+
+.plrb-10 {
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  padding-bottom: 10px !important;
+}

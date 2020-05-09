@@ -1,0 +1,73 @@
+/* Config général */
+html, body{
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+.is-overflow-y-auto {
+  overflow-y: auto;
+}
+
+/* Style border */
+.is-border-1 {
+  border: 1px solid #4F576066 !important;
+}
+.is-border-2 {
+  border: 1px solid #E6E6E6 !important;
+}
+
+/* border-radius personnalisé */
+.border-raduis-10{
+  border-radius: 10px !important;
+}
+.border-radius-20{
+  border-radius: 20px;
+}
+
+/* taille de texte personnalisé */
+.is-size-14px {
+  font-size: 14px !important;
+}
+.is-size-18px {
+  font-size: 18px !important;
+}
+
+/* personnalisation des input */
+.input, select, .select, span.icon {
+  height: 50px !important;
+}
+.input, .taginput .taginput-container.is-focusable, .textarea, .select select {
+  border-radius: 10px;
+}
+
+/* alignement personnalisé */
+.align-items-start{
+  align-items: start !important;
+}
+
+.is-trunc {
+  white-space: unset;
+  width: 80%;
+}
+
+/* ************************************************************** */
+.box-shadow-0{
+  box-shadow: none;
+}
+.box-shadow-1{
+  box-shadow: 0px 1px 4px $color-shadow;
+}
+.box-shadow-2{
+  box-shadow: 0px 3px 10px #00000014;
+}
+
+.pos-illustr-2{
+  position: absolute;
+  right: 10px;
+  top: -100px;
+}
+
+/* Tableau de bord */
+#content-tableau-de-bord {
+  overflow-y: auto;
+}
