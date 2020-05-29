@@ -7,6 +7,9 @@ import Connexion from '../views/Connexion.vue';
 import TableauDeBord from '../views/tableau-de-bord/index.vue';
 import Acceuil from '../views/tableau-de-bord/Acceuil.vue';
 
+import ListeEnfants from '../views/tableau-de-bord/enfants/l.enfants.vue';
+import DetailEnfant from '../views/tableau-de-bord/enfants/d.enfant.vue';
+
 Vue.use(VueRouter);
 
 const routes = [
@@ -41,6 +44,16 @@ const routes = [
         path: '',
         name: 'tdb-acceuil',
         component: Acceuil,
+      },
+      {
+        path: 'liste-enfants',
+        name: 'tdb-liste-enfants',
+        component: ListeEnfants,
+      },
+      {
+        path: 'detail-enfant',
+        name: 'tdb-detail-enfant',
+        component: DetailEnfant,
       },
     ],
   },

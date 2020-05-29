@@ -17,12 +17,14 @@
             <b-icon
               pack="fas"
               icon="bell"
+              type="is-primary"
               size="is-medium">
             </b-icon>
           </a>
           <a class="has-badge-rounded has-badge-danger mx-20" data-badge="8">
             <b-icon
               pack="fas"
+              type="is-primary"
               icon="comments"
               size="is-medium">
             </b-icon>
@@ -30,6 +32,7 @@
           <a class="">
             <b-icon
               pack="fas"
+              type="is-primary"
               icon="sign-out-alt"
               size="is-medium">
             </b-icon>

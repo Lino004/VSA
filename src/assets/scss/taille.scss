@@ -3,9 +3,6 @@
   width: 100vw;
   position: relative;
 }
-.is-width-100p{
-  width: 100%;
-}
 .is-height-100p{
   height: 100%;
 }
@@ -13,11 +10,18 @@
   min-height: 100%;
 }
 
-/* ********* */
-
+/* *************************** */
 .is-width-85{
   width: 85px;
 }
 .is-width-100{
   width: 100px;
+}
+
+/* *************************** */
+.is-width-60p{
+  width: 60%;
+}
+.is-width-100p{
+  width: 100%;
 }

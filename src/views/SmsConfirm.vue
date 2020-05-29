@@ -32,8 +32,14 @@
                         <b-field
                           :type="controle.code.valide === false ? 'is-danger' : ''"
                           :message="controle.code.msg">
-                          <b-input
+                          <!-- <b-input
                             v-model="info.code"
+                            expanded
+                            :placeholder="$t('smsConfimation.placeholder.code')"
+                            type="number"
+                            @blur="verificationChamps('code')"/> -->
+                          <InputCustum
+                            v-model.trim="info.code"
                             expanded
                             :placeholder="$t('smsConfimation.placeholder.code')"
                             type="number"
@@ -45,30 +51,18 @@
                   </div>
                 </div>
 
-                <div class="content py-30">
+                <div class="content pb-30">
                   <div class="columns is-marginless is-paddingless is-centered is-variable is-5">
-                    <div class="column is-4 has-text-right">
-                      <b-button
-                        type="is-danger"
-                        size="is-medium"
-                        rounded
-                        expanded
-                        @click="$router.go(-1)">
-                        <span class="is-size-6">
-                          {{$t('smsConfimation.libellBtnRetour')}}
-                        </span>
-                      </b-button>
-                    </div>
-                    <div class="column is-4">
+                    <div class="column is-6">
                       <b-button
                         type="is-primary"
                         size="is-medium"
                         rounded
                         expanded
                         @click="confirmation">
-                        <span class="is-size-6">
+                        <p class="is-size-6">
                           {{$t('smsConfimation.libellBtnConfirmer')}}
-                        </span>
+                        </p>
                       </b-button>
                     </div>
                   </div>
@@ -89,10 +83,12 @@
 
 <script>
 import FooterInfo from '@/components/general/FooterInfo.vue';
+import InputCustum from '@/components/general/InputCustum.vue';
 
 export default {
   components: {
     FooterInfo,
+    InputCustum,
   },
   data: () => ({
     info: {

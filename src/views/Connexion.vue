@@ -16,19 +16,19 @@
               <div class="card-content pa-30">
                 <b-field
                   class="mb-30"
-                  :type="controle.email.valide === false ? 'is-danger' : ''"
-                  :message="controle.email.msg">
+                  :type="controle.identifiant.valide === false ? 'is-danger' : ''"
+                  :message="controle.identifiant.msg">
                   <template slot="label">
                     <p class="has-text-grey has-text-weight-normal is-size-7">
                       {{$t('connexion.labelIdentifiant')}}
                     </p>
                   </template>
                   <b-input
-                    v-model="info.email"
+                    v-model="info.identifiant"
                     expanded
-                    :placeholder="$t('connexion.placeholder.email')"
-                    type="email"
-                    @blur="verificationChamps('email')"/>
+                    :placeholder="$t('connexion.placeholder.identifiant')"
+                    rounded
+                    @blur="verificationChamps('identifiant')"/>
                 </b-field>
 
                 <b-field class="pb-30"
@@ -79,21 +79,20 @@ export default {
   },
   data: () => ({
     info: {
-      email: 'paulboni@gmail.com',
+      identifiant: '+2296845791',
       password: '12345678',
     },
     controle: {
-      email: { valide: null, msg: '' },
+      identifiant: { valide: null, msg: '' },
       password: { valide: null, msg: '' },
     },
   }),
   methods: {
     verificationChamps(champs) {
-      if (champs === 'email') {
-        const regex = /^[a-z0-9._-]+@[a-z0-9._-]+\.[a-z]{2,6}$/;
-        if (!regex.test(this.info[champs])) {
+      if (champs === 'identifiant') {
+        if (!this.info[champs]) {
           this.controle[champs].valide = false;
-          this.controle[champs].msg = this.$t('connexion.msgErr.email');
+          this.controle[champs].msg = this.$t('connexion.msgErr.identifiant');
         } else {
           this.controle[champs].valide = true;
           this.controle[champs].msg = '';

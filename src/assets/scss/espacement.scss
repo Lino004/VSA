@@ -16,6 +16,12 @@
 .mt-40 {
   margin-top: 40px !important;
 }
+.mt-50 {
+  margin-top: 50px !important;
+}
+.mt-60 {
+  margin-top: 60px !important;
+}
 .mt-120 {
   margin-top: 120px;
 }
@@ -26,6 +32,9 @@
 // margin right
 .mr-0 {
   margin-right: 0px !important;
+}
+.mr-5 {
+  margin-right: 5px !important;
 }
 .mr-10 {
   margin-right: 10px !important;
@@ -83,9 +92,19 @@
 .ml-40 {
   margin-left: 40px;
 }
+.ml-50 {
+  margin-left: 50px;
+}
+.ml-60 {
+  margin-left: 60px;
+}
 
 // margin left and right
 
+.mx-5 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
 .mx-20 {
   margin-left: 20px;
   margin-right: 20px;
@@ -196,6 +215,10 @@
   padding-left: 0px !important;
   padding-right: 0px !important;
 }
+.px-5 {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
 .px-10 {
   padding-left: 10px !important;
   padding-right: 10px !important;
@@ -207,9 +230,17 @@
 
 // padding top and bottom
 
+.py-auto {
+  padding-top: auto !important;
+  padding-bottom: auto !important;
+}
 .py-0 {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
+}
+.py-15 {
+  padding-top: 15px !important;
+  padding-bottom: 15px !important;
 }
 .py-20 {
   padding-top: 20px !important;
@@ -226,6 +257,9 @@
 }
 
 // padding auto
+.pa-5 {
+  padding: 5px !important;
+}
 .pa-10 {
   padding: 10px !important;
 }

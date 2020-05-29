@@ -3,8 +3,7 @@
     type="is-light"
     fullheight
     overlay
-    :open.sync="value"
-    @close="$emit('input', false)"
+    :open.sync="open"
     class="is-hidden-widescreen">
     <BarMenuContent/>
   </b-sidebar>
@@ -21,6 +20,16 @@ export default {
     BarMenuContent,
   },
   data: () => ({}),
+  computed: {
+    open: {
+      get() {
+        return this.value;
+      },
+      set(val) {
+        this.$emit('input', val);
+      },
+    },
+  },
 };
 </script>
 

@@ -3,10 +3,10 @@ export const CONNEXION = {
   labelMotDePasse: 'Mot de Passe',
   libelleBtnConnexion: 'Se connecter',
   placeholder: {
-    email: 'Ex: paulboni@gmail.com',
+    identifiant: 'Ex: +22912345678',
   },
   msgErr: {
-    email: 'Veillez entrer un email valide',
+    identifiant: 'Veillez entrer un identifiant valide',
     password: 'Champs obligatoire',
   },
 };

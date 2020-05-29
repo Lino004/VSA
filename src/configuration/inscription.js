@@ -6,8 +6,13 @@ export const GENRE = [
 
 export const SITUATION_MATRIMONIALE = [
   { libelle: 'Célibataire', value: 'celibataire' },
-  { libelle: 'Divorcé', value: 'divorce' },
   { libelle: 'Marié', value: 'marie' },
-  { libelle: 'Veuf', value: 'veuf' },
-  { libelle: 'Veuve', value: 'veuve' },
+  { libelle: 'Concubinage,', value: 'concubinage' },
+  { libelle: 'Union libre,', value: 'union_libre' },
+  { libelle: 'Divorcé', value: 'divorce' },
+];
+
+export const SITUATION_PROFESSIONNELLE = [
+  { libelle: 'En activité', value: 'en_activite' },
+  { libelle: 'Au chômage', value: 'au_chomage' },
 ];

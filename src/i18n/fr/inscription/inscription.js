@@ -13,8 +13,11 @@ export const INSCRIPTION = {
     adresse: 'Adresse de résidence',
     situationProfessionnelle: 'Situation professionnelle',
     telephone: 'Téléphone',
+    password: 'Mot de passe',
+    passwordConfirm: 'Confirmez le mot de passe',
     pieceIdentite: 'Fichier de la pièce d’identité en cours de validité',
     attestationResidence: 'Fichier de l’attestation de résidence numérisé',
+    extraitNaissance: 'Fichier de l\'extrait d\'acte de naissance',
   },
   placeholder: {
     nom: 'Ex: BONI',
@@ -29,6 +32,8 @@ export const INSCRIPTION = {
     adresse: '',
     situationProfessionnelle: '',
     telephone: 'Ex: 12345678',
+    password: '',
+    passwordConfirm: '',
   },
   msgErr: {
     nom: 'Seul des lettres majuscules ou minuscule sont autorisée',
@@ -44,20 +49,29 @@ export const INSCRIPTION = {
     situationProfessionnelle: '',
     telephone: 'Au moins 8 chiffres',
     defaut: 'Champs obligatoire',
+    password1: 'Au moins {0} carractères',
+    password2: 'Au moins une minuscule',
+    password3: 'Au moins une majuscule',
+    password4: 'Au moins un chiffre',
+    password5: 'Au moins un caractère non alphanumérique',
+    passwordConfirm: 'Doit être identique au mot de passe',
   },
   libellBtnTelecharger: 'Télécharger',
   libellBtnAnnuler: 'Annuler',
   libellBtnEnregistrer: 'S\'enregistrer',
   dialog: {
-    msg: 'Confirmez votre numéro',
+    msg: `Pour nous assurez que le numéro <b>{0}</b> est bien le vôtre, nous allons vous envoyer un SMS contenant un code de validation. <br/>
+          <b>NB:</b> si ce numéro n'est pas le votre veillez le modifier dans le formulaire`,
+    libelleBtnOk: 'Ok',
+    libelleBtnCancel: 'Annuler',
   },
   listeVide: 'Aucun résultat',
 };
 
 export const SMS_CONFIRMATION = {
-  titre: 'Confirmation d\'inscription',
+  titre: 'Confirmation du numéro',
   label: {
-    code: 'Entrez le code de confirmation',
+    code: 'Entrez le code reçu par SMS',
   },
   placeholder: {
     code: 'Ex: 7845',

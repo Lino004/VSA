@@ -54,7 +54,7 @@
         </div>
         <div class="column is-4">
           <div class="box is-min-height-100p box-shadow-2 border-radius-20">
-            <div class="level is-mobile mb-0">
+            <div class="level is-mobile">
               <div class="level-left">
                 <a class="">
                   <b-icon
@@ -94,7 +94,7 @@
             <div class="level">
               <div class="level-left"></div>
               <div class="level-item">
-                <b-button @click="clickMe" type="is-aquamarine" class="is-width-100">
+                <b-button type="is-aquamarine" class="is-width-100">
                   <small>Plus</small>
                 </b-button>
               </div>
