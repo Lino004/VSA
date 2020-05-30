@@ -9,7 +9,7 @@
       </div>
       <div class="level-right">
         <a class="button is-rounded is-primary is-width-100"  @click="$router.go(-1)">
-          Retour
+          {{$t('enfant.edition.btnRetour')}}
         </a>
       </div>
     </div>
@@ -24,7 +24,7 @@
                         is-6 is-marginless is-paddingless
                         is-variable is-5">
               <div class="column is-6">
-                <span> {{$t('inscription.label.nom')}} </span>
+                <span> {{$t('enfant.edition.label.nom')}} </span>
               </div>
               <div class="column is-6">
                 <b-field
@@ -33,7 +33,7 @@
                   <InputCustum
                     v-model.trim="info.nom"
                     expanded
-                    :placeholder="$t('inscription.placeholder.nom')"
+                    :placeholder="$t('enfant.edition.placeholder.nom')"
                     type="name"
                     @blur="verificationChamps('nom')"/>
                 </b-field>
@@ -45,7 +45,7 @@
                         is-6 is-marginless is-paddingless
                         is-variable is-5">
               <div class="column is-6">
-                <span> {{$t('inscription.label.genre')}} </span>
+                <span> {{$t('enfant.edition.label.genre')}} </span>
               </div>
               <div class="column is-6">
                 <b-field>
@@ -68,7 +68,7 @@
                         is-6 is-marginless is-paddingless
                         is-variable is-5">
               <div class="column is-6">
-                <span> {{$t('inscription.label.prenom')}} </span>
+                <span> {{$t('enfant.edition.label.prenom')}} </span>
               </div>
               <div class="column is-6">
                 <b-field
@@ -77,7 +77,7 @@
                   <InputCustum
                     v-model.trim="info.prenom"
                     expanded
-                    :placeholder="$t('inscription.placeholder.prenom')"
+                    :placeholder="$t('enfant.edition.placeholder.prenom')"
                     type="name"
                     @blur="verificationChamps('prenom')"/>
                 </b-field>
@@ -89,7 +89,7 @@
                         is-6 is-marginless is-paddingless
                         is-variable is-5">
               <div class="column is-6">
-                <span> {{$t('inscription.label.dataNaissance')}} </span>
+                <span> {{$t('enfant.edition.label.dataNaissance')}} </span>
               </div>
               <div class="column is-6">
                 <b-field
@@ -97,7 +97,7 @@
                   :message="controle.dataNaissance.msg">
                   <b-datepicker
                     v-model="info.dataNaissance"
-                    :placeholder="$t('inscription.placeholder.dataNaissance')"
+                    :placeholder="$t('enfant.edition.placeholder.dataNaissance')"
                     icon="calendar-today"
                     editable
                     @blur="verificationChamps('dataNaissance')">
@@ -109,7 +109,9 @@
           </div>
 
           <div class="has-text-centered py-20">
-            <b-button rounded type="is-primary">Enregistrer</b-button>
+            <b-button rounded type="is-primary">
+              {{$t('enfant.edition.btnEnregistrer')}}
+            </b-button>
           </div>
         </div>
       </div>
@@ -147,8 +149,8 @@ export default {
   }),
   computed: {
     titrePage() {
-      if (this.isModif) return 'Modifier les informations de votre enfant';
-      return 'Ajouter votre enfant';
+      if (this.isModif) return this.$t('enfant.edition.pageModifTitre');
+      return this.$t('enfant.edition.pageAjoutTitre');
     },
     isModif() {
       return this.$route.params.id !== undefined;
@@ -160,7 +162,7 @@ export default {
         const regex = /^[a-zA-Z ]+$/;
         if (!regex.test(this.info[champs])) {
           this.controle[champs].valide = false;
-          this.controle[champs].msg = this.$t(`inscription.msgErr.${champs}`);
+          this.controle[champs].msg = this.$t(`enfant.edition.msgErr.${champs}`);
         } else {
           this.controle[champs].valide = true;
           this.controle[champs].msg = '';
@@ -170,7 +172,7 @@ export default {
       if (champs === 'dataNaissance') {
         if (!this.info.dataNaissance) {
           this.controle.dataNaissance.valide = false;
-          this.controle.dataNaissance.msg = this.$t('inscription.msgErr.dataNaissance');
+          this.controle.dataNaissance.msg = this.$t('enfant.edition.msgErr.dataNaissance');
         } else {
           this.controle.dataNaissance.valide = true;
           this.controle.dataNaissance.msg = '';

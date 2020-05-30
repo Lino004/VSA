@@ -13,7 +13,9 @@
             <div class="level is-mobile">
               <div class="level-left">
                 <div>
-                  <h6 class="subtitle is-7 mb-4">Age</h6>
+                  <h6 class="subtitle is-7 mb-4">
+                    {{$t('enfant.liste.viewGrid.age')}}
+                  </h6>
                   <h6 class="subtitle is-6 has-text-black">
                     {{enfant.age}}
                   </h6>
@@ -21,7 +23,9 @@
               </div>
               <div class="level-right">
                 <div>
-                  <h6 class="subtitle is-7 mb-4">Sexe</h6>
+                  <h6 class="subtitle is-7 mb-4">
+                    {{$t('enfant.liste.viewGrid.sexe')}}
+                  </h6>
                   <h6 class="subtitle is-6 has-text-black">
                     {{sexes.find((el) => el.value === enfant.sexe).libelle}}
                   </h6>
@@ -38,7 +42,9 @@
             type="is-primary"
             class="is-width-60p box-shadow-3"
             @click="$router.push({ name: 'tdb-detail-enfant' })">
-            <p class="is-size-7">Voir détails</p>
+            <p class="is-size-7">
+              {{$t('enfant.liste.viewGrid.btnDetail')}}
+            </p>
           </b-button>
         </div>
       </div>

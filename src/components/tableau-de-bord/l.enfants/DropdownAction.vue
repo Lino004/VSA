@@ -7,7 +7,8 @@
     <b-dropdown-item aria-role="listitem" @click="$router.push({ name: 'tdb-detail-enfant' })">
       <div class="level is-mobile">
         <div class="level-left">
-          <b-icon class="mr-10" icon="eye"></b-icon>Détails
+          <b-icon class="mr-10" icon="eye"></b-icon>
+          {{$t('enfant.liste.dropAction.detail')}}
         </div>
       </div>
     </b-dropdown-item>
@@ -20,14 +21,16 @@
       })">
       <div class="level is-mobile">
         <div class="level-left">
-          <b-icon class="mr-10" icon="pencil"></b-icon>Éditer
+          <b-icon class="mr-10" icon="pencil"></b-icon>
+          {{$t('enfant.liste.dropAction.edit')}}
         </div>
       </div>
     </b-dropdown-item>
     <b-dropdown-item aria-role="listitem">
       <div class="level is-mobile">
         <div class="level-left">
-          <b-icon class="mr-10" icon="delete"></b-icon>Supprimer
+          <b-icon class="mr-10" icon="delete"></b-icon>
+          {{$t('enfant.liste.dropAction.supprime')}}
         </div>
       </div>
     </b-dropdown-item>

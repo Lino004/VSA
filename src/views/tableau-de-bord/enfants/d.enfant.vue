@@ -3,13 +3,13 @@
     <div class="level is-mobile">
       <div class="level-left">
         <div>
-          <h4 class="is-size-4"> Mes enfants </h4>
-          <p class="is-size-6 has-text-default">Détail de votre enfant</p>
+          <h4 class="is-size-4"> {{$t('enfant.titre')}} </h4>
+          <p class="is-size-6 has-text-default">{{$t('enfant.liste.titre')}}</p>
         </div>
       </div>
       <div class="level-right">
         <a class="button is-rounded is-primary is-width-100"  @click="$router.go(-1)">
-          Retour
+          {{$t('enfant.detail.btnRetour')}}
         </a>
       </div>
     </div>
@@ -27,8 +27,8 @@
           </div>
         </div>
       </div>
-      <div class="columns">
-        <div class="column is-two-thirds-desktop is-paddingless">
+      <div class="columns mt-40">
+        <div class="column is-two-thirds-desktop">
           <div class="card border-raduis-10 box-shadow-2">
             <div class="card-content">
               <div class="level is-mobile">
@@ -42,19 +42,25 @@
               <div class="level is-mobile">
                 <div class="level-left">
                   <div>
-                    <p class="is-size-7">Age</p>
+                    <p class="is-size-7">
+                      {{$t('enfant.detail.age')}}
+                    </p>
                     <p class="is-size-6"> {{data.age}} </p>
                   </div>
                 </div>
                 <div class="level-item">
                   <div>
-                    <p class="is-size-7">Date de naisssance</p>
+                    <p class="is-size-7">
+                      {{$t('enfant.detail.dateNaissance')}}
+                    </p>
                     <p class="is-size-6"> {{data.dataNaissance}} </p>
                   </div>
                 </div>
                 <div class="level-right">
                   <div>
-                    <p class="is-size-7">Sexe</p>
+                    <p class="is-size-7">
+                      {{$t('enfant.detail.sexe')}}
+                    </p>
                     <p class="is-size-6">
                       {{config.SEXE.find((el) => el.value === data.sexe).libelle}}
                     </p>
@@ -62,7 +68,9 @@
                 </div>
               </div>
               <div>
-                <p class="is-size-7">Alergie</p>
+                <p class="is-size-7">
+                  {{$t('enfant.detail.alergie')}}
+                </p>
                 <div class="column is-4 is-paddingless">
                   <div class="pa-5 is-inline">
                     <b-tag rounded type="is-primary">Penicillin</b-tag></div>
@@ -84,7 +92,9 @@
                       name: 'tdb-modifier-enfant',
                       params: {
                         id: data.id
-                    }})">Modifier</b-button>
+                    }})">
+                    {{$t('enfant.detail.btnModifier')}}
+                    </b-button>
                 </div>
                 <div class="level-right"></div>
               </div>

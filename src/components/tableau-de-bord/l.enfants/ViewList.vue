@@ -10,7 +10,7 @@
     <template slot-scope="props">
       <b-table-column
         field="nom"
-        label="NOM"
+        label="$t('enfant.liste.viewList.nom')"
         sortable
         cell-class="has-text-default is-size-7 has-text-middle"
         header-class="is-size-7 py-15">
@@ -29,7 +29,7 @@
 
       <b-table-column
         field="prenom"
-        label="PRENOM"
+        :label="$t('enfant.liste.viewList.prenom')"
         sortable
         cell-class="has-text-default is-size-7 has-text-middle"
         header-class="is-size-7 py-15">
@@ -38,7 +38,7 @@
 
       <b-table-column
         field="age"
-        label="AGE"
+        :label="$t('enfant.liste.viewList.age')"
         sortable
         cell-class="has-text-default is-size-7 has-text-middle"
         header-class="is-size-7 py-15">
@@ -47,7 +47,7 @@
 
       <b-table-column
         field="sexe"
-        label="SEXE"
+        :label="$t('enfant.liste.viewList.sexe')"
         sortable
         cell-class="has-text-default is-size-7 has-text-middle"
         header-class="is-size-7 py-15">
@@ -55,7 +55,7 @@
       </b-table-column>
 
       <b-table-column
-        label="ACTION"
+        :label="$t('enfant.liste.viewList.action')"
         cell-class="has-text-middle"
         header-class="is-size-7 py-15"
         numeric>

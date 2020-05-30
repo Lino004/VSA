@@ -3,8 +3,8 @@
     <div class="level is-mobile">
       <div class="level-left">
         <div>
-          <h4 class="is-size-4"> Mes enfants </h4>
-          <p class="is-size-6 has-text-default">Liste de vos enfants</p>
+          <h4 class="is-size-4"> {{$t('enfant.titre')}} </h4>
+          <p class="is-size-6 has-text-default">{{$t('enfant.liste.titre')}}</p>
         </div>
       </div>
       <div class="level-right">
@@ -12,7 +12,7 @@
           class="button is-rounded is-primary"
           @click="$router.push({ name: 'tdb-ajouter-enfant'})">
           <b-icon icon="plus" class="mr-5"></b-icon>
-          Ajouter un enfant
+          {{$t('enfant.liste.btnAjout')}}
         </a>
       </div>
     </div>
@@ -41,7 +41,7 @@
         <div class="level-right">
           <div class="level-item">
             <b-select
-              placeholder="Âge"
+              :placeholder="$t('enfant.liste.placeholderAge')"
               rounded
               class="select-liste-enfant"
               v-model="ageSelect">
@@ -55,7 +55,7 @@
           </div>
           <div class="level-item">
             <b-select
-              placeholder="Sexe"
+              :placeholder="$t('enfant.liste.placeholderSexe')"
               rounded
               class="select-liste-enfant"
               v-model="sexSelect">
@@ -91,13 +91,13 @@
               slot="previous"
               slot-scope="props"
               :page="props.page">
-              Précèdent
+              {{$t('enfant.liste.pagination.precedent')}}
             </b-pagination-button>
             <b-pagination-button
               slot="next"
               slot-scope="props"
               :page="props.page">
-              Suivant
+              {{$t('enfant.liste.pagination.suivant')}}
             </b-pagination-button>
           </b-pagination>
         </div>
