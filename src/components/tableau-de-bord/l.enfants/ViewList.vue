@@ -16,7 +16,10 @@
         header-class="is-size-7 py-15">
         <div class="media">
           <figure class="media-left">
-            <avatar :size="45" username="Francisco M."></avatar>
+            <avatar
+              :size="45"
+              :username="`${props.row.nom} ${props.row.prenom}`">
+            </avatar>
           </figure>
           <div class="media-content">
             {{ props.row.nom }}

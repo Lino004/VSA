@@ -3,6 +3,9 @@
   width: 100vw;
   position: relative;
 }
+.is-height-50p{
+  height: 50%;
+}
 .is-height-100p{
   height: 100%;
 }
@@ -24,4 +27,14 @@
 }
 .is-width-100p{
   width: 100%;
+}
+
+/* *************************** */
+.is-wh-50px{
+  width: 50px !important;
+  height: 50px !important;
+}
+.is-wh-85px{
+  width: 85px !important;
+  height: 85px !important;
 }

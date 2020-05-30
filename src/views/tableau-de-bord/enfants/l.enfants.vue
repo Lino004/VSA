@@ -8,7 +8,9 @@
         </div>
       </div>
       <div class="level-right">
-        <a class="button is-rounded is-primary">
+        <a
+          class="button is-rounded is-primary"
+          @click="$router.push({ name: 'tdb-ajouter-enfant'})">
           <b-icon icon="plus" class="mr-5"></b-icon>
           Ajouter un enfant
         </a>

@@ -1,7 +1,8 @@
 export const SILDEBAR = {
   menu: {
-    acceuil: 'Acceuil',
+    acceuil: 'Accueil',
     enfants: 'Mes enfants',
+    profil: 'Profil',
   },
 };
 export const ACCEUIL = {

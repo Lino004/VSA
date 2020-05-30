@@ -11,6 +11,7 @@ $danger: #FF7291;
 $default: $color-grid-2;
 $msg-danger: #FFEAEB;
 $aquamarine: #1CE1AC;
+$yello: #F8E71C;
 
 $color-shadow: #00000029;
 $navbar-box-shadow-color: $color-shadow;
@@ -29,5 +30,6 @@ $addColors: (
   "danger": ($danger, $white),
   "default": ($default, $white),
   "aquamarine": ($aquamarine, $white),
+  "yello": ($yello, $white),
   "transparent": ($transparent, $black),
 );

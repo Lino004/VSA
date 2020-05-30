@@ -9,6 +9,9 @@ html, body{
 }
 
 /* Style border */
+.is-border-0 {
+  border: none !important;
+}
 .is-border-1 {
   border: 1px solid #4F576066 !important;
 }
@@ -76,6 +79,12 @@ html, body{
 .box-shadow-3{
   box-shadow: 0px 10px 20px #00000033;
 }
+.box-shadow-4{
+  box-shadow: 0px 8px 20px #4346560F;
+}
+.box-shadow-5{
+  box-shadow: 0px 3px 6px #00000029;
+}
 
 .pos-illustr-2{
   position: absolute;
@@ -97,4 +106,52 @@ th.checkbox-cell{
 }
 td.checkbox-cell{
   vertical-align: middle !important;
+}
+
+
+.card-detail-profil{
+  box-shadow: 0px 3px 6px #0000000F !important;
+  border-radius: 9px 9px 50px 50px;
+}
+.avatar-detail-profil{
+  position: relative;
+  top: 40px;
+}
+
+.card-edit{
+  box-shadow: 0px 3px 6px #0000000F;
+  border-radius: 9px 9px 50px 50px;
+}
+
+.vertical-align-bottom{
+  vertical-align: bottom;
+}
+
+.is-slide-solde {
+  .b-slider{
+    margin: 5px 0;
+  }
+  .b-slider .b-slider-track  {
+    height: 20px !important;
+    border-radius: 26px;
+    box-shadow: 0px 3px 6px #00000029;
+    .b-slider-fill{
+      border-radius: 26px;
+    }
+  }
+  .b-slider.is-large .b-slider-thumb{
+    height: 35px;
+    width: 35px;
+    background-color: $yello;
+    box-shadow: 0px 3px 6px #0000005F;
+  }
+  .b-slider.is-disabled .b-slider-track{
+    opacity: 1;
+  }
+}
+
+#list_last_factures.b-table{
+  thead{
+    box-shadow: 0px 3px 6px #0000001A;
+  }
 }

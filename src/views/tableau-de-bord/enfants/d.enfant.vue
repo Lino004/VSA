@@ -14,21 +14,21 @@
       </div>
     </div>
     <div class="ml-40">
-      <div class="card card-detail-enfant">
+      <div class="card card-detail-profil">
         <div class="card-content pa-0">
           <div class="media pl-30">
-            <div class="media-left avatar-detail-enfant">
-              <avatar :size="120" username="Francisco M."></avatar>
+            <div class="media-left avatar-detail-profil pb-10">
+              <avatar :size="120" :username="`${data.nom} ${data.prenom}`"></avatar>
             </div>
             <div class="media-content">
-              <p class="is-size-4">TCHAOU</p>
-              <p class="is-size-4">Rosalia, Belle</p>
+              <p class="is-size-4"> {{data.nom}} </p>
+              <p class="is-size-4"> {{data.prenom}} </p>
             </div>
           </div>
         </div>
       </div>
-      <div class="colums">
-        <div class="column is-two-thirds-desktop is-paddingless mt-40">
+      <div class="columns">
+        <div class="column is-two-thirds-desktop is-paddingless">
           <div class="card border-raduis-10 box-shadow-2">
             <div class="card-content">
               <div class="level is-mobile">
@@ -43,19 +43,21 @@
                 <div class="level-left">
                   <div>
                     <p class="is-size-7">Age</p>
-                    <p class="is-size-6">30 ans</p>
+                    <p class="is-size-6"> {{data.age}} </p>
                   </div>
                 </div>
                 <div class="level-item">
                   <div>
                     <p class="is-size-7">Date de naisssance</p>
-                    <p class="is-size-6">30/10/1997</p>
+                    <p class="is-size-6"> {{data.dataNaissance}} </p>
                   </div>
                 </div>
                 <div class="level-right">
                   <div>
-                    <p class="is-size-7">Height</p>
-                    <p class="is-size-6">180 cm</p>
+                    <p class="is-size-7">Sexe</p>
+                    <p class="is-size-6">
+                      {{config.SEXE.find((el) => el.value === data.sexe).libelle}}
+                    </p>
                   </div>
                 </div>
               </div>
@@ -77,7 +79,12 @@
                 <div class="level-item">
                   <b-button
                     type="is-primary"
-                    class="is-width-60p button-modif-enfant">Modifier</b-button>
+                    class="is-width-60p button-modif-enfant"
+                    @click="$router.push({
+                      name: 'tdb-modifier-enfant',
+                      params: {
+                        id: data.id
+                    }})">Modifier</b-button>
                 </div>
                 <div class="level-right"></div>
               </div>
@@ -99,6 +106,14 @@ export default {
   },
   data: () => ({
     config,
+    data: {
+      nom: 'AKAKPO',
+      prenom: 'Akofa',
+      age: 15,
+      dataNaissance: '01/02/2005',
+      sexe: 'M',
+      id: 1,
+    },
   }),
   computed: {},
   methods: {},
@@ -106,14 +121,6 @@ export default {
 </script>
 
 <style>
-.card-detail-enfant{
-  box-shadow: 0px 3px 6px #0000000F !important;
-  border-radius: 9px 9px 50px 50px;
-}
-.avatar-detail-enfant{
-  position: relative;
-  top: 40px;
-}
 .button-modif-enfant{
   background: transparent
     linear-gradient(98deg, #0074E4 0%, #00AAFA 37%, #00D6E8 67%, #6FFACB 100%)
