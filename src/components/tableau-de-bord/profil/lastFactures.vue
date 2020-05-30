@@ -1,6 +1,8 @@
 <template>
   <div>
-    <h5 class="is-size-5 has-text-grid-2 mb-20">Dernières factures</h5>
+    <h5 class="is-size-5 has-text-grid-2 mb-20">
+      {{$t('profil.lastFactures.titre')}}
+    </h5>
     <b-table
       :data="data"
       id="list_last_factures">
@@ -8,55 +10,57 @@
       <template slot-scope="props">
         <b-table-column
           field="libelle"
-          label="LIBELLE"
+          :label="$t('profil.lastFactures.libelle')"
           header-class="is-size-7 py-15"
           cell-class="has-text-default is-size-7 has-text-middle py-20">
           {{ props.row.libelle }}
         </b-table-column>
         <b-table-column
           field="numero"
-          label="NUMERO"
+          :label="$t('profil.lastFactures.numero')"
           header-class="is-size-7 py-15"
           cell-class="has-text-default is-size-7 has-text-middle py-20">
           {{ props.row.numero }}
         </b-table-column>
         <b-table-column
           field="partenaire"
-          label="PARTENAIRE"
+          :label="$t('profil.lastFactures.partenaire')"
           header-class="is-size-7 py-15"
           cell-class="has-text-default is-size-7 has-text-middle py-20">
           {{ props.row.partenaire }}
         </b-table-column>
         <b-table-column
           field="client"
-          label="CLIENT"
+          :label="$t('profil.lastFactures.client')"
           header-class="is-size-7 py-15"
           cell-class="has-text-default is-size-7 has-text-middle py-20">
           {{ props.row.client }}
         </b-table-column>
         <b-table-column
           field="id_client"
-          label="ID CLIENT"
+          :label="$t('profil.lastFactures.id_client')"
           header-class="is-size-7 py-15"
           cell-class="has-text-default is-size-7 has-text-middle py-20">
           {{ props.row.id_client }}
         </b-table-column>
         <b-table-column
           field="montant"
-          label="MONTANT"
+          :label="$t('profil.lastFactures.montant')"
           header-class="is-size-7 py-15"
           cell-class="has-text-default is-size-7 has-text-middle py-20">
           {{ props.row.montant }}
         </b-table-column>
         <b-table-column
-          label="OPTION"
+          :label="$t('profil.lastFactures.option')"
           header-class="is-size-7 py-15"
           cell-class="has-text-default is-size-7 has-text-middle py-20">
           <b-button
             type="is-success"
             icon-right="eye"
             rounded>
-            <span class="is-size-7">Detail</span>
+            <span class="is-size-7">
+              {{$t('profil.lastFactures.btnDetail')}}
+            </span>
           </b-button>
         </b-table-column>
       </template>

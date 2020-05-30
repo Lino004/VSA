@@ -3,7 +3,7 @@
     <div class="level is-mobile">
       <div class="level-left">
         <div>
-          <h4 class="is-size-4"> Profil </h4>
+          <h4 class="is-size-4"> {{$t('profil.titre')}} </h4>
           <!-- <p class="is-size-6 has-text-default">Détail de votre enfant</p> -->
         </div>
       </div>
@@ -30,7 +30,7 @@
             </div>
             <div class="level-right pr-30">
               <b-button type="is-danger" rounded>
-                Désactiver
+                {{$t('profil.btnDesactiver')}}
               </b-button>
             </div>
           </div>

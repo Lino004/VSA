@@ -3,6 +3,7 @@ import * as connexion from './connexion/connexion';
 import * as inscription from './inscription/inscription';
 import * as tableauDeBord from './tableau-de-bord/tableauDeBord';
 import * as enfant from './enfant/enfant';
+import * as profil from './profil/profil';
 
 export const PAGES = {
   general: general.GENERAL,
@@ -12,6 +13,7 @@ export const PAGES = {
   sildebar: tableauDeBord.SILDEBAR,
   pgAcceuil: tableauDeBord.ACCEUIL,
   enfant: enfant.ENFANT,
+  profil: profil.PROFIL,
 };
 
 export const NOTHING = '';
