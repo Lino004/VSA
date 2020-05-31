@@ -14,6 +14,11 @@ export const MENU = [
     icon: 'user',
     to: { name: 'tdb-profil' },
   },
+  {
+    label: 'message',
+    icon: 'comments',
+    to: { name: 'tdb-messagerie' },
+  },
 ];
 
 export const NOTHING = '';

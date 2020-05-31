@@ -4,6 +4,7 @@ import * as inscription from './inscription/inscription';
 import * as tableauDeBord from './tableau-de-bord/tableauDeBord';
 import * as enfant from './enfant/enfant';
 import * as profil from './profil/profil';
+import * as messagerie from './messagerie/messagerie';
 
 export const PAGES = {
   general: general.GENERAL,
@@ -14,6 +15,7 @@ export const PAGES = {
   pgAcceuil: tableauDeBord.ACCEUIL,
   enfant: enfant.ENFANT,
   profil: profil.PROFIL,
+  messagerie: messagerie.MESSAGERIE,
 };
 
 export const NOTHING = '';

@@ -25,6 +25,16 @@ Vue.use(Buefy, {
   defaultDateFormatter: (date) => date.toLocaleDateString('fr'),
 });
 
+const filter = (text, length, clamp) => {
+  const dataClamp = clamp || '...';
+  const node = document.createElement('div');
+  node.innerHTML = text;
+  const content = node.textContent;
+  return content.length > length ? content.slice(0, length) + dataClamp : content;
+};
+
+Vue.filter('truncate', filter);
+
 Vue.config.productionTip = false;
 const messages = translate.TRANSLATE;
 if (process.env.NODE_ENV === 'development') {

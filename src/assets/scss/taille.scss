@@ -6,11 +6,21 @@
 .is-height-50p{
   height: 50%;
 }
+.is-height-100p-40px{
+  height: calc(100% - 40px);
+}
+.is-height-100p-50px{
+  height: calc(100% - 50px);
+}
 .is-height-100p{
   height: 100%;
 }
 .is-min-height-100p{
   min-height: 100%;
+}
+
+.is-height-70vh{
+  height: 70vh;
 }
 
 /* *************************** */
@@ -19,6 +29,9 @@
 }
 .is-width-100{
   width: 100px;
+}
+.is-width-180{
+  width: 180px;
 }
 
 /* *************************** */

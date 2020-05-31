@@ -7,6 +7,9 @@ html, body{
 .is-overflow-y-auto {
   overflow-y: auto;
 }
+.invisible-scrollbar::-webkit-scrollbar {
+  display: none;
+}
 
 /* Style border */
 .is-border-0 {
@@ -59,6 +62,9 @@ html, body{
 /* alignement personnalisé */
 .align-items-start{
   align-items: start !important;
+}
+.align-items-end{
+  align-items: flex-end !important;
 }
 
 .is-trunc {
@@ -154,4 +160,19 @@ td.checkbox-cell{
   thead{
     box-shadow: 0px 3px 6px #0000001A;
   }
+}
+
+.has-text-trunc {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.content-messagerie{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.flex-1{
+  flex: 1;
 }

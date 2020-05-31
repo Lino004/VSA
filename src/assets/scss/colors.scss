@@ -13,6 +13,8 @@ $msg-danger: #FFEAEB;
 $aquamarine: #1CE1AC;
 $yello: #F8E71C;
 
+$active: #C7E7F8;
+
 $color-shadow: #00000029;
 $navbar-box-shadow-color: $color-shadow;
 
@@ -31,5 +33,6 @@ $addColors: (
   "default": ($default, $white),
   "aquamarine": ($aquamarine, $white),
   "yello": ($yello, $white),
+  "active": ($active, $white),
   "transparent": ($transparent, $black),
 );

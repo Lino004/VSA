@@ -12,6 +12,7 @@ import DetailEnfant from '../views/tableau-de-bord/enfants/d.enfant.vue';
 import EditEnfant from '../views/tableau-de-bord/enfants/e.enfant.vue';
 import Profil from '../views/tableau-de-bord/profil/index.vue';
 import ModifierProfil from '../views/tableau-de-bord/profil/e.profil.vue';
+import Messagerie from '../views/tableau-de-bord/messagerie/index.vue';
 
 Vue.use(VueRouter);
 
@@ -77,6 +78,11 @@ const routes = [
         path: 'modifier-profil',
         name: 'tdb-modifier-profil',
         component: ModifierProfil,
+      },
+      {
+        path: 'messagerie',
+        name: 'tdb-messagerie',
+        component: Messagerie,
       },
     ],
   },
